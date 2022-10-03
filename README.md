@@ -12,7 +12,7 @@ Basic CRUD server using TypeScript, class-validator, <a href="https://www.npmjs.
 ※ if MODULE_NOT_FOUND happens then go back to 5(You will do it only one time after clone this)
 
 ## Note
-1. Why MODULE_NOT_FOUND error can be occured
+### Why MODULE_NOT_FOUND error can be occured
 
 package.json:
 ```json
@@ -31,7 +31,7 @@ So `tsc -w` and `nodemon` dist/app will be executed simultaneously, it can be ha
 
 `nodemon dist/app` can be executed before `tsc -w` is executed.
 
-2. Test with Postman
+### Test with Postman
 
 BODY should be raw-json type. 
 
