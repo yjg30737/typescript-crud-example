@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mapper">
+    <select id="getAll">
+        SELECT * FROM people
+    </select>
+    <select id="getById">
+        SELECT * FROM people WHERE id=#{id}
+    </select>
+    <select id="create">
+        INSERT INTO people (name, age, job) VALUES (#{name}, #{age}, #{job})
+    </select>
+    <select id="update">
+        UPDATE people SET name=#{name}, age=#{age}, job=#{job} WHERE id=#{id}
+    </select>
+    <select id="remove">
+        DELETE FROM people WHERE id=#{id}
+    </select>
+</mapper>
